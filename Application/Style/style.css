@@ -15,7 +15,7 @@ a {
 
 /*---- HEADER ----*/
 .header {
-    background-color:#26273d;
+    background-color:#0e0f24;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10+ and Edge */
     user-select: none; /* Standard syntax */
@@ -25,9 +25,9 @@ a {
 }
 
 .header a.active {
-    background-color: rgb(255, 60, 0);
+    border-bottom   : 4px solid rgb(255, 60, 0);
     color           : white;    
-    height          : 1.6em;    
+    height          : 1.2em;      
 }
 
 .header a {
@@ -118,6 +118,24 @@ a {
     color           : white;
 }
 .btn-rng {
-    background-image: linear-gradient(to bottom, rgb(189, 123, 0), rgb(184, 101, 0));
+    background-image: linear-gradient(to bottom, rgb(255, 185, 55), rgb(139, 77, 0));
     color           : white;
+}
+
+/*---- Table ----*/
+
+.allbus-table {
+    margin          : 100px auto;    
+}
+.allbus-table th {
+    border-bottom   : 1px solid lightblue;
+}
+.allbus-table td {
+    border-bottom   : 1px solid #ddd;
+    text-align      : center;
+}
+.allbus-table th, 
+.allbus-table td {
+    width           : 200px;
+    line-height     : 70px;
 }
