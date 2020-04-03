@@ -24,5 +24,7 @@
     /**
      * A core.php-ban megyünk tovább.
      */
+
+  
     require_once APPPATH.'Core/core.php';    
     
