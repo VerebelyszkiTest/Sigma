@@ -74,16 +74,3 @@ function errorLog($message)
 
     return file_put_contents($path, $msg);
 }
-
-
-/**
- * @param string $message Message about the error
- */
-function errorLog($message)
-{   
-    
-    $path       = APPPATH.'Log/dberror.log';
-    $msg        = "[".date('Y-m-d H:i:s')."]".$message.PHP_EOL;
-
-    return file_put_contents($path, $msg);
-}
