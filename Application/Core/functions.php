@@ -64,7 +64,7 @@ function view($datas)
 }
 
 /**
- * @param string $message Message about the error
+ * @param string $message Kiírandó hibaüzenet
  */
 function errorLog($message)
 {   

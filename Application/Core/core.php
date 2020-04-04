@@ -11,15 +11,6 @@
      */
     $cleanedUri = str_replace(APPROOT, '', $uriPart);
 
-    /**     
-     * A $stepBack változó, ha a tisztított url üres string,
-     * vagyis a tratalmazó mappa végén nem szerepel /-jel, akkor
-     * értékül kapja az APPROOT konstanst egy / jellel megtoldva.
-     * Ez ahhoz kell, hogy a css letöltés ne egy mappával a projektmappa 
-     * fölött keresse az APPPATH mappát.
-     */ 
-    $stepBack = $cleanedUri == '' ? APPROOT.'/' : '';
-
     /** 
      * Aktuális gyökérmappa visszakeresése és a visszalépés (STEPBACK) 
      * konstans definiálása. A példában a böngésző a /jhhj/Application/Style/style.css-t
@@ -34,7 +25,8 @@
      *      2 => string '' (length=0)
      * 
      * ...a ciklusnak 2-től kell indulnia
-     */       
+     */    
+    $stepBack = '';   
     for($i = 2; $i< count(explode('/', $cleanedUri)); $i++)
     {
         $stepBack .= '../';
