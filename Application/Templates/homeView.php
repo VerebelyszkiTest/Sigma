@@ -1,1 +1,1 @@
-<div class="wellcome-container">Hello 14SZ!</div>
+<div class="wellcome-container">Home page</div>

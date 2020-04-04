@@ -5,10 +5,7 @@ body {
     font-size       : 16px;   
     font-family     : DejaVu Serif; 
 }
-a {
-    text-decoration : none;
-    color           : black;
-}
+
 * {
     outline         : none;
 }
@@ -24,6 +21,10 @@ a {
     user-select     : none; /* Standard syntax */
     -ms-user-select : none; /* IE 10+ and Edge */
     -webkit-user-select: none; /* Safari */
+}
+.header a {
+    text-decoration : none;
+    color           : black;
 }
 .header span {    
     font-size       : 40px;
@@ -102,11 +103,14 @@ a {
     white-space     : pre;
     color           : #555;
 }
-.ms-404-msg span {
+.ms-404-msg span:last-child {
     color           : #e67e22;
     font-size       : 5em;
     font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style      : italic;
+}
+.ms-404-msg span + span {
+    font-size       : 20px;
 }
 
 /*---- Buttons ----*/
