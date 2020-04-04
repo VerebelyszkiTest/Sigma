@@ -64,6 +64,9 @@ function view($datas)
 }
 
 /**
+ * A kapott hibaüzenetet írja ki az Application/Log/dberror.log fájlba
+ * Ha a Log/ mappa nem létezik, a fájl létrehozása nem hajtódik végre.
+ * 
  * @param string $message Kiírandó hibaüzenet
  */
 function errorLog($message)
