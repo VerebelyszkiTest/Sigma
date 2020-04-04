@@ -1,1 +1,1 @@
-<div class="wellcome-container">Home page!</div>
+<div class="wellcome-container">&#931;&#921;&#915;&#924;&#913;</div>
