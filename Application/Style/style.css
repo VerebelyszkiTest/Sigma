@@ -12,7 +12,7 @@ body {
 
 /*---- HEADER ----*/
 .header {    
-    width           : calc(100% - 20px );
+    width           : calc( 100% - 20px );
     padding         : 0 10px;    
     height          : 60px;
     background-color: white;     
@@ -34,6 +34,7 @@ body {
     margin-right    : 20px;    
     margin-left     : 10;    
     float           : left;
+    text-shadow     : 2px 2px #aaa;  
 }
 .header a.active {
     border-bottom   : 2px solid #e67e22;    
@@ -67,15 +68,17 @@ body {
     font-size       : 20px;
     text-align      : center;
     width           : 60%;
-    margin          : 50px auto;  
+    margin          : 50px auto;      
+}
+.about-container:last-child {
     font-style      : italic;
 }
-.about-container .sigma {
+.about-container .name-plate {
     letter-spacing  : 0.5em;
     font-size       : 50px;
-    padding-bottom  : 50px;
+    padding-bottom  : 50px;      
 }
-.about-container .sigma::first-letter {
+.about-container .name-plate::first-letter {
     color           : #e67e22;
     font-size       : 1.2em;
 }
@@ -83,12 +86,10 @@ body {
 /*---- ERROR ----*/
 .error-cont {
     margin          : auto;
-    padding         : 120px 200px;    
-    text-align      : center;
-    width           : 1000px;
+    padding         : 120px 0;    
+    text-align      : center;    
     display         : table;
-    font-size       : 20px;   
-    white-space     : pre; 
+    font-size       : 20px;       
     color           : #555;
 }
 .error-cont > span {
