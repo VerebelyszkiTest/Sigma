@@ -55,16 +55,11 @@ a {
 } 
 
 /*---- Home page ----*/
-.wellcome-container {
-    font-size       : 50px;
+.wellcome-container {    
     text-align      : center;
-    margin          : 50px auto;  
-    letter-spacing  : 0.5em;
+    margin          : 50px auto;         
 }
-.wellcome-container::first-letter {
-    color           : #e67e22;
-    font-size       : 1.2em;
-}
+
 
 /*---- About ----*/
 .about-container {
@@ -73,20 +68,31 @@ a {
     width           : 60%;
     margin          : 50px auto;  
     font-style      : italic;
-    white-space     : pre;
+}
+.about-container .sigma {
+    letter-spacing  : 0.5em;
+    font-size       : 50px;
+    padding-bottom  : 50px;
+}
+.about-container .sigma::first-letter {
+    color           : #e67e22;
+    font-size       : 1.2em;
 }
 
 /*---- ERROR ----*/
 .error-cont {
     margin          : auto;
-    padding         : 50px 200px 200px 200px;
-    background-color: rgb(221, 221, 221);
+    padding         : 120px 200px;    
+    text-align      : center;
     width           : 1000px;
     display         : table;
-    font-size       : 40px;
-    border          : 1px solid #aaa;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    font-size       : 20px;   
+    white-space     : pre; 
+    color           : #555;
+}
+.error-cont > span {
+    color           : #e67e22;
+    font-size       : 2em;
 }
 
 /*---- 404 ----*/
@@ -94,6 +100,7 @@ a {
     margin-top      : 100px;
     text-align      : center;
     white-space     : pre;
+    color           : #555;
 }
 .ms-404-msg span {
     color           : #e67e22;

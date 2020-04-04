@@ -1,4 +1,5 @@
 <main class="error-cont">
-    Sorry!! Something went wrong!<br>
-    Please try again it later!
+    <span>Sorry!!</span> Something went wrong!
+        
+        Please try again later!
 </main>
