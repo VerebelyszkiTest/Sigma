@@ -9,7 +9,9 @@ body {
 * {
     outline         : none;
 }
-
+:root {
+    --bg-color      : black;   
+}
 /*---- HEADER ----*/
 .header {    
     width           : calc( 100% - 20px );
@@ -22,11 +24,7 @@ body {
     -ms-user-select : none; /* IE 10+ and Edge */
     -webkit-user-select: none; /* Safari */
 }
-.header a {
-    text-decoration : none;
-    color           : black;
-}
-.header span {    
+.header > span {    
     font-size       : 40px;
     line-height     : 40px;
     margin-top      : 10px;
@@ -36,20 +34,22 @@ body {
     float           : left;
     text-shadow     : 2px 2px #aaa;  
 }
-.header a.active {
+.header > a.active {
     border-bottom   : 2px solid #e67e22;    
-    height          : 1.2em;      
+    height          : 1.2em;         
 }
-.header a {
+.header > a {
     position        : relative;
     padding         : 20px 15px;
     display         : inline-block;
+    text-decoration : none;
+    color           : black;
     transition      : background-color 0.4s ease-in-out;
 }
-.header a.about {
+.header > a.about {
     float           : right;
 }
-.header a:hover:not(.active) {
+.header > a:hover:not(.active) {
     background-color: #f0f0f0;    
     border-radius   : 10px;
     padding         : 15px 15px;

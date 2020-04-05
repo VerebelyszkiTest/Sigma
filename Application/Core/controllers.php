@@ -1,7 +1,7 @@
 <?php
 
 function homeController($datas)
-{
+{    
     view([
         "home"  => 'active',
         "title" => "- Home",
