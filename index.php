@@ -1,5 +1,7 @@
 <?php       
 
+    die("Ezennel minden megváltozik");
+
     ini_set('display_errors', 1);
 
     define('APPPATH', 'Application/');
