@@ -1,7 +1,4 @@
-<?php
-
-    die( "Most minden megváltozik.");
-    
+<?php       
 
     ini_set('display_errors', 1);
 
