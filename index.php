@@ -1,6 +1,6 @@
 <?php       
 
-    die("Ezennel minden megváltozik");
+    die("Ezennel minden megváltozik. Második mentés.");
 
     ini_set('display_errors', 1);
 
