@@ -4,7 +4,7 @@
      * Az URL szétszedése. Első körben megtisztítjuk a ?-jel utáni
      * query_string-től.
      */
-    $uriPart = explode('?', $_SERVER['REQUEST_URI'])[0]; 
+    $uriPart = explode('?', $_SERVER['REQUEST_URI'])[0]
 
     /**
      * Második körben az APPROOT értékét kivágjuk az URL-ből.

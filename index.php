@@ -1,10 +1,21 @@
-<?php       
-
-    die("Ezennel minden megváltozik. Második mentés.");
-
-    ini_set('display_errors', 1);
+<?php           
 
     define('APPPATH', 'Application/');
+
+    /**
+     * hibaüzenetek kimenetre írásának ki/be kapcsolása.
+     */
+    ini_set('display_errors', 0);
+
+    // Logolás szintje -> error level
+    error_reporting(E_ALL);
+
+    // Logolás be/ki kapcsolása
+    ini_set("log_errors", 1);
+
+    // Logfájl útvonala
+    ini_set("error_log", APPPATH."Log/sys.log");
+    
 
     /**
      * Az APPROOT szükséges ahhoz, hogy amennyiben nem nem a webszerver
@@ -13,7 +24,8 @@
      * Pl.: winsql.vereb.dc/diakXX/feladat/index.php
      *    ekkor:              --> /feladat
      */
-    define('APPROOT', '');       
+    define('APPROOT', '');
+    
 
     /**
      * Az adatbázis kacsolódásho szükséges adatokat tartalmazó json fájl.
